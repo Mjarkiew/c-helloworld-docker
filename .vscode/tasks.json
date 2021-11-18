@@ -1,0 +1,25 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "build binary for remote (debug symbols)",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-g",
+                "${workspaceFolder}/src/helloworld.c",
+                "-o",
+                "${workspaceFolder}/build/helloworld"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

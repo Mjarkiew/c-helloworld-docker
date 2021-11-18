@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "debug remote (gdb)",
+            "type": "cppdbg",
+            "request": "launch",
+            "miDebuggerServerAddress": "localhost:7777",
+            "program": "${workspaceFolder}/build/helloworld",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build binary for remote (debug symbols)",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}
