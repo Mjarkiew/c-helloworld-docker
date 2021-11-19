@@ -1,0 +1,10 @@
+#   Author: Mateusz Jarkiewicz - mjarkiew.github.io
+
+version: "3.8"
+
+services:
+  app:
+    image: c-helloworld-docker:1.0
+    ports:
+      - 7777:7777
+    working_dir: /opt/helloworld
